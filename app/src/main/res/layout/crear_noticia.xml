@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crearNoticia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearNoticia"
+    android:background="@drawable/fondo_app">
+
+    <TextView
+        android:id="@+id/txtNewNoticia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nueva Noticia"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="75dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/txtNewNoticia"
+        app:layout_constraintBottom_toTopOf="@id/btnBack"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtnewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Título de Noticia"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/newTextitulo"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:hint="Escribe aquí"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/txtnewBajada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bajada de Titulo"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/newTexbajada"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:hint="Escribe aquí"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/txtnewImgUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="URL Imagen"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/newImgUrl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Escribe aquí"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/txtnewCuerpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cuerpo de Noticia"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/newCuerpo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:hint="Escribe aquí"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/boton_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="700dp"/>
+
+    <ImageButton
+        android:id="@+id/btnSend"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/boton_send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="700dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

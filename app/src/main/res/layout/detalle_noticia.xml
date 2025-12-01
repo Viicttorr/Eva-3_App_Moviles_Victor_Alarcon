@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detalleNoticia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleNoticia"
+    android:background="@drawable/fondo_app">
+
+    <TextView
+        android:id="@+id/txtTituloDetalle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Título de la noticia"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtBajadaDetalle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Subtitulo de la noticia"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:alpha="0.85"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTituloDetalle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgDetalle"
+        android:layout_width="0dp"
+        android:layout_height="175dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cuadro_imagen"
+        android:contentDescription="Imagen de la noticia"
+        app:layout_constraintTop_toBottomOf="@id/txtBajadaDetalle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtFechaDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="29/11/2025"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:paddingStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/imgDetalle"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtAutorDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autor de la noticia"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:paddingEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/txtFechaDetalle"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ScrollView
+        android:id="@+id/scrollCuerpo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/txtAutorDetalle"
+        app:layout_constraintBottom_toTopOf="@id/btnBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/txtCuerpoDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cuerpo de la noticia"
+            android:justificationMode="inter_word"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:lineSpacingExtra="4dp"
+            android:padding="16dp"/>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="750dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/boton_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

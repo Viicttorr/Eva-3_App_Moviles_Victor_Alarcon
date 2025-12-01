@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "432448179187",
+    "project_id": "appiotandroid",
+    "storage_bucket": "appiotandroid.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432448179187:android:019dd926cd4c0bde9aa086",
+        "android_client_info": {
+          "package_name": "com.example.eva_2_app_moviles"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAunwbj5LxTq8UM6_SXr7nv_THAGJYqEeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
