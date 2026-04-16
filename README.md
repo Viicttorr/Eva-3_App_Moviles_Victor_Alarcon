@@ -1,4 +1,4 @@
-# 📱 Evaluación 3 - Aplicación Android con Firebase
+# 📱 Aplicación Móvil con Firebase
 
 Aplicación desarrollada en **Android Studio** como continuación de la **Evaluación 2**, integrando nuevas funcionalidades y conexión con **Firebase Firestore**.  
 El proyecto consolida el flujo de autenticación, navegación y gestión de noticias, aplicando buenas prácticas de UI/UX.
